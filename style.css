@@ -39,7 +39,7 @@ body{
 
 @media (max-width: 768px) {
     .card{
-        margin-top: 18rem;
+        margin-top: 7rem;
     }
     .image-text{
         margin-left: -2rem;
