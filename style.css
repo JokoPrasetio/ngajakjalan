@@ -1,0 +1,47 @@
+body{
+    background-color: #FFEFE8;
+}
+.card{
+    margin-top: 11rem;
+}
+.card .card-title{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 600;
+}
+.card .a{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 500;
+}
+
+.card img{
+    width: 80px;
+}
+.image-text{
+    margin-left: 23rem;
+}
+
+@keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  img.swing {
+    animation: swing 4s ease-in-out infinite;
+    transform-origin: top center;
+  }
+
+@media (max-width: 768px) {
+    .card{
+        margin-top: 18rem;
+    }
+    .image-text{
+        margin-left: -2rem;
+    }
+}
