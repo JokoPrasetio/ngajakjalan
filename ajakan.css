@@ -1,3 +1,52 @@
 body{
     background-color: #FFEFE8;
 }
+.card{
+    margin-top: 11rem;
+}
+.card .card-title{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 600;
+}
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1000%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }  
+  .swing{
+    animation: moveRight 4s ease-in-out infinite, moveLeft 4s ease-in-out infinite;
+  }
+
+  @keyframes shake{
+    0%, 100%{
+        transform: rotate(0deg);
+    }
+    25%, 75%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+  }
+  .shake-button{
+    animation: shake 4s ease-in-out infinite;
+    transform-origin: top center;
+  }
