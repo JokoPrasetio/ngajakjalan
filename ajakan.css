@@ -50,3 +50,8 @@ body{
     animation: shake 4s ease-in-out infinite;
     transform-origin: top center;
   }
+  @media (max-width: 768px) {
+    .card{
+        margin-top: 9.5rem;
+    }
+}
